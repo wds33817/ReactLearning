@@ -1,0 +1,51 @@
+var numbers = [3, 56, 2, 48, 5];
+
+//Map - Create a new array by doing something with each item in an array.
+
+//Filter - Create a new array by keeping the items that return true.
+
+//Reduce - Accumulate a value by doing something to each item in an array.
+
+//Find - find the first item that matches from an array.
+
+//FindIndex - find the index of the first item that matches.
+
+//map:
+//const newNumbers = numbers.map((x) => x * 2);
+//console.log(newNumbers);
+
+//filter:
+// console.log(
+//   numbers.filter(function (num) {
+//     return num < 10;
+//   })
+// );
+
+//reduce:
+// var newNumbers = [];
+// numbers.forEach(function (num) {
+//   if (num < 10) {
+//     newNumbers.push(num);
+//   }
+// });
+// console.log(newNumbers);
+
+// var newNum = numbers.reduce(
+//   (accumulator, currentNumber) => accumulator + currentNumber
+// );
+// var newNum = numbers.reduce(function (acc, curr) {
+//   console.log("accumulator = " + acc);
+//   console.log("ccurrentNumber = " + curr);
+//   return acc + curr;
+// });
+// console.log(newNum);
+
+// const newNumber = numbers.find(function (num) {
+//   return num > 10;
+// });
+// console.log(newNumber);
+
+const newNumber = numbers.findIndex(function (num) {
+  return num > 10;
+});
+console.log(newNumber);
